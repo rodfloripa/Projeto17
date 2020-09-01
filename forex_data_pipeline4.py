@@ -66,22 +66,3 @@ with DAG(dag_id="forex_data_pipeline4",
             hdfs dfs -put -f $AIRFLOW_HOME/dags/files/forex_rates.json /forex
         """
     )
-    creating_forex_rates_table = HiveOperator(
-        task_id="creating_forex_rates_table",
-        hive_cli_conn_id="hive_conn",
-        hql="""
-            CREATE EXTERNAL TABLE IF NOT EXISTS forex_rates(
-                base STRING,
-                last_update DATE,
-                eur DOUBLE,
-                usd DOUBLE,
-                nzd DOUBLE,
-                gbp DOUBLE,
-                jpy DOUBLE,
-                cad DOUBLE
-                )
-            ROW FORMAT DELIMITED
-            FIELDS TERMINATED BY ','
-            STORED AS TEXTFILE
-        """
-    )
