@@ -110,3 +110,4 @@ with DAG(dag_id="forex_data_pipeline6",
         channel = '#airflow-exploit'
 
     )
+is_forex_rates_available >> is_forex_currencies_file_available >> downloading_rates >> saving_rates >> creating_forex_rates_table >> forex_processing >> sending_email_notification >> sending_slack_notification
