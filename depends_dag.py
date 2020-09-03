@@ -24,7 +24,7 @@ with DAG(dag_id='depends_task', schedule_interval="0 0 * * *", default_args=defa
     bash_task_1 = BashOperator(task_id='bash_task_1', bash_command="echo 'first task'")
     
     # Task 2
-    python_task_2 = PythonOperator(task_id='python_task_2', python_callable=second_task)
+    python_task_2 = PythonOperator(task_id='python_task_2', python_callable=second_task,depends_on_past=True)
 
     # Task 3
     python_task_3 = PythonOperator(task_id='python_task_3', python_callable=third_task)
