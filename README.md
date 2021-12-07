@@ -3,4 +3,4 @@ Otimização com MCMC: temperatura
 
 O objetivo é otimizar a temperatura de um ambiente , minimizando o gasto energético.
 
-![](https://github.com/rodfloripa/Projeto17/new/master/thermo.png?)
+![](https://github.com/rodfloripa/Projeto17/new/master/temp.jpeg)
