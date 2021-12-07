@@ -5,4 +5,4 @@ O objetivo é deixar a temperatura de um ambiente em um certo intervalo , minimi
 
 ![thermo](https://github.com/rodfloripa/Projeto17/blob/master/temp.jpg)
 
-![thermo](https://github.com/rodfloripa/Projeto17/blob/master/thermo.jpg)
+![thermo](https://github.com/rodfloripa/Projeto17/blob/master/thermo.png)
